@@ -1,15 +1,4 @@
 #!/bin/bash
-#PBS -N regrid
-#PBS -q serial
-#PBS -A NPSCA07935YF5
-#PBS -l select=2:ncpus=32:mpiprocs=8:mem=200GB
-#PBS -l walltime=16:00:00
-#PBS -j oe
-#PBS -M gergel@uw.edu
-#PBS -m abe
-
-# activate virtual environment
-source activate pangeo
 
 # process soil grid NetCDFs by cropping them and then regridding them
 
